@@ -24,7 +24,7 @@ def stats(ign, key):
     final_kills = data['player']['stats']['Bedwars']['final_kills_bedwars']
     final_deaths = data['player']['stats']['Bedwars']['final_deaths_bedwars']
 
-    return f'Level: {round(current_level)}\nWins: {wins}\nLosses: {losses}\nGames Played: {games_played}\n\n' \
+    return f'Level: {round(current_level)}\nWins: {wins}\nLosses: {losses}\nWin Rate: {round(wins/losses, 1)}\nGames Played: {games_played}\n\n' \
            f'Final Kills: {final_kills}\nFinal Deaths: {final_deaths}\n' \
            f'Overall FKDR: {round(final_kills/final_deaths)}\n' \
            f'Win Streak: {winstreak}\nBeds Broken: {beds_broken}'
