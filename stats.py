@@ -19,7 +19,7 @@ def stats(ign, key):
     losses = data['player']['stats']['Bedwars']['losses_bedwars']
     wins = data['player']['stats']['Bedwars']['wins_bedwars']
     beds_broken = data['player']['stats']['Bedwars']['beds_broken_bedwars']
-    win_rate = round(wins / losses, 2)
+    win_rate = round(wins/ (wins + losses), 2)
     
     "#Like Catacombs levels, it's inaccurate"
     experience = data['player']['stats']['Bedwars']['Experience']
